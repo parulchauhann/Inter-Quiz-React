@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Libre+Bodoni&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#navbar {
+    background-color: #42FF8E;
+    width: 97vw;
+    height: 17vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 3vh;
+}
+
+#app_name {
+    display: flex;
+    align-items: center;
+    margin-left: 1vw;
+}
+
+.logo {
+    width: 7vw;
+    height: 7vw;
+    border-radius: 50%;
+}
+
+#title {
+    font-size: 4vw;
+    color: #2700C2;
+    margin-left: .7vw;
+    font-family: 'Kaushan Script', cursive;
+}
+
+#modeButton {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: .4vw .7vw;
+    margin-right: 2vw;
+    border: none;
+    border-radius: 5%;
+}
+
+.mode {
+    width: 2.6vw;
+    height: 2.6vw;
+    border-radius: 50%;
+}
+
+.mode_name {
+    font-size: 1.5vw;
+    padding: .3vw;
+}
+
+.welcome_text {
+    font-size: 1.7vw;
+    font-family: 'Libre Bodoni', serif;
+    font-style: italic;
+    margin: 10vh 0vh;
+}
+
+.description {
+    font-size: 1.5vw;
+    font-family: 'Libre Bodoni', serif;
+    margin: 3vh 0vh 13vh 0vh;
+}
+
+#start_button {
+    padding: .7vw;
+    width: 16vw;
+    height: 10vh;
+    font-size: 2.7vw;
+    font-family: 'Libre Bodoni', serif;
+    font-style: italic;
+    color: #2700C2;
+    background-color: #42FF8E;
+    border: none;
+    border-radius: 5%;
+    font-weight: 900;
+    transition: background-color 0.3s, color 0.3s;
+    animation: blink .3s infinite alternate;
+}
+
+#start_button:hover {
+    transform: scale(1.1);
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    border: 2px solid #2700C2;
+    cursor: pointer;
+}
+
+#quiz_playground {
+    margin-top: 3vw;
+    text-shadow: 10px 10px 20px rgba(84, 243, 190, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#main_content {
+    width: 80vw;
+    height: 68vh;
+    margin: auto;
+    border-radius: 2%;
+    background-color: #42FF8E;
+}
+
+#quesNo_section {
+    font-family: 'Libre Bodoni', serif;
+    font-style: italic;
+    display: flex;
+    font-size: 2vw;
+    justify-content: flex-start;
+    margin: 2vh 0vw 0vw 1vw;
+}
+
+.question_header {
+    text-decoration: underline;
+}
+
+#the_question {
+    font-family: 'Libre Bodoni', serif;
+    font-size: 2vw;
+    margin: 1vw;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.options {
+    width: 33vw;
+    height: 8vh;
+    margin: 2vw;    
+    font-size: 1.5vw;
+    font-family: 'Libre Bodoni', serif;
+    padding: .5vw;
+    background-color: white;
+    border: 1px black solid;
+    border-radius: 5%;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.options:hover {
+    color: white;
+    transform: scale(1.05);
+    background-color: rgba(0, 0, 255, 0.438);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.highlight,
+.remove_highlight {
+    width: 17vw;
+    height: 6vh;
+    padding: .5vw;
+    margin: 2vw;
+    font-size: 1.7vw;
+    border: 2.5px solid red;
+    border-radius: 6%;
+    font-family: 'Libre Bodoni', serif;
+    transition: background-color 0.3s, color 0.3s;
+    box-shadow: 2px 2px 4px red;
+}
+
+.highlight:hover {
+    transform: scale(1.05);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.remove_highlight:hover {
+    transform: scale(1.05);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.home_Img, .retake_Img {
+    width: 3vw;
+    height: 3vw;
+}
+
+.home_button, .retake_button {
+    background-color: #42FF8E;
+    display: flex;
+    align-items: center; 
+    margin: 2vw;
+    border-color: #42FF8E;
+    border-radius: 10%;
+    padding: .6vw;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.home_button:hover {
+    transform: scale(1.05);
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.retake_button:hover {
+    transform: scale(1.05);
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.home, .retake {
+    padding: .5vw;
+    margin-top: .3vw;
+    font-size: 2vw;
+    font-family: 'Libre Bodoni', serif;
+}
+
+.result_desc {
+    font-size: 3vw;
+    font-family: 'Libre Bodoni', serif;
+    margin: 7vw 0vw 5vw 0vw;
+    color: red;
+}
+
+.finalScore {
+    font-size: 3.3vw;
+    font-family: 'Libre Bodoni', serif;
+    margin: 5vw 0vw 6vw 0vw;
+    display: flex;
+    justify-content: center;
+}
+
+#resultPage_buttons {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.6;
+    }
+}
+
+@media all and (orientation: portrait) {
+    #app_name {
+        margin-left: 1vw;
+    }
+    
+    .logo {
+        width: 15vw;
+        height: 15vw;
+    }
+    
+    #title {
+        font-size: 7vw;
+    }
+    
+    #modeButton {
+        padding: .8vw 1vw;
+        margin-right: 3vw;
+    }
+    
+    .mode {
+        width: 4.8vw;
+        height: 4.8vw;
+    }
+    
+    .mode_name {
+        font-size: 2.8vw;
+        padding: .6vw;
+    }
+    
+    .welcome_text {
+        font-size: 2.8vw;
+    }
+    
+    .description {
+        font-size: 2.5vw;
+    }
+    
+    #start_button {
+        padding: 1vw;
+        width: 30vw;
+        height: 8vh;
+        font-size: 5vw;
+    }
+
+    #quesNo_section {
+        font-size: 3vw;
+    }
+    
+    #the_question {
+        font-size: 3.8vw;
+        margin: 2vw;
+    }
+    
+    .options {
+        width: 55vw;
+        height: 6vh;
+        margin-top: 2vw;
+        font-size: 2.3vw;
+        padding: .5vw;
+        font-weight: 600;
+    }
+
+    .highlight,
+    .remove_highlight {
+        width: 28vw;
+        height: 5vh;
+        padding: .5vw;
+        margin: 2vw;
+        font-size: 3vw;
+        font-weight: bold;
+        border: 2.5px solid red;
+    }
+    
+    .home_Img, .retake_Img {
+        width: 9vw;
+        height: 9vw;
+    }
+    
+    #home_button, #retake_button {
+        padding: 1vw;
+        margin-top: 10vw;
+    }
+    
+    .home, .retake {
+        padding: .9vw;
+        margin-top: .3vw;
+        font-size: 5vw;
+    }
+    
+    .result_desc {
+        font-size: 4.8vw;
+        margin-top: 15vw;
+    }
+    
+    .finalScore {
+        font-size: 4.4vw;
+        margin-top: 15vw;
+    }
+}
